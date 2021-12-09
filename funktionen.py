@@ -63,7 +63,7 @@ def milliliter_zu_liter(ml):
     print("Liter: ", liter)
 milliliter_zu_liter(10000)
 
-# Gtränkeautomat
+# Getränkeautomat
 def getraenkeautomat(anzahl_1cent, anzahl_2cent,  anzahl_5cent, anzahl_10cent, anzahl_20cent, anzahl_50cent, anzahl_1euro, anzahl_2euro):
     summe = 0.01 * anzahl_1cent + 0.02 * anzahl_2cent + 0.05 * anzahl_5cent + 0.10 * anzahl_10cent + 0.20 * anzahl_20cent + 0.50 * anzahl_50cent + 1 * anzahl_1euro + 2 * anzahl_2euro
     print("Gesamtbetrag:", summe)
@@ -80,15 +80,58 @@ maximum(4, 6)
 
 # Das Minimum von einer Auswahl, bestehend aus 2 Zahlen berechnen
 def minimum(zahl1, zahl2):
-    if zahl1 < zahl2:
+    if zahl1 > zahl2:
         print(zahl1)
     else:
         print(zahl2)
-minimum(4, 6)
+    
+        
+       
 
 # das Maximum von einer Auswahl, bestehend aus 3 Zahlen, berechnen
-def maximum(zahl1, zahl2, zahl3):
-    if zahl1 > zahl3
+def maximum_von_3_Zahlen(zahl1, zahl2, zahl3):
+    if zahl1 > zahl3 and zahl1 > zahl2:
+        print(zahl1)
+    
+    elif zahl2 > zahl1 and zahl2 > zahl3:
+        print(zahl2)
+    else:
+        print(zahl3)
+maximum_von_3_Zahlen
+
+
+# Eine neue liste, "Einkaufswagen", erstellen
+einkaufswagen = [7.50, 18.32, 10.99, 49.58, 7.10]
+
+
+# Eine Funktion erstellen die alle Elemente des Einkaufswagens (jewiels auf einer neuen Zeile) ausdruckt.
+laenge = len(einkaufswagen)
+i = 0
+while i < laenge:
+    print(einkaufswagen[i]) 
+    i = i + 1
+
+# Eine Funktion erstellen die den Gesamtpreis des Einkaufswagens ermittelt.
+einkaufswagen = [7.50, 18.32, 10.99, 49.58, 7.10]
+i = 0
+summe = 0
+while i < len (einkaufswagen):
+    summe = summe + einkaufswagen[i]
+    i = i + 1
+print("Gesamtsumme:", summe)
+
+
+# Eine funktion erstellen die den durchschnittspreis des Einkaufswagens ermittelt.
+anzahl = len(einkaufswagen)
+print("Durchschnittspreis:", summe / anzahl)
+
+
+
+
+
+
+
+  
 
 
 
